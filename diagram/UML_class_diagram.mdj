@@ -1254,9 +1254,9 @@
 										"$ref": "AAAAAAF1u8xlY5mSwUo="
 									},
 									"font": "Arial;13;0",
-									"left": 968,
+									"left": 964,
 									"top": 304,
-									"width": 55.64990234375,
+									"width": 62.14990234375,
 									"height": 13,
 									"alpha": 1.515297267703043,
 									"distance": 18.027756377319946,
@@ -1264,7 +1264,7 @@
 										"$ref": "AAAAAAF1u8xlY5mWMXs="
 									},
 									"edgePosition": 1,
-									"text": "-daugther"
+									"text": "-daugthers"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1421,9 +1421,9 @@
 										"$ref": "AAAAAAF1u8xlY5mUApo="
 									},
 									"font": "Arial;13;0",
-									"left": 1017,
+									"left": 1016,
 									"top": 348,
-									"width": 5.05908203125,
+									"width": 6.5,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -2114,7 +2114,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF1u7n9w5a4bLA="
 							},
-							"name": "daugther",
+							"name": "daugthers",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAF1u8xlY5mTemA=",
