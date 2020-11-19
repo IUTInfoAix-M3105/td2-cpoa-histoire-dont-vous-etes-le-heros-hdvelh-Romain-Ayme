@@ -15,6 +15,11 @@ public class Scenario {
 	private Event head;
 	private GUIManager gui;
 
+	public Scenario(GUIManager gui, Event head) {
+		this.gui = gui;
+		this.head = head;
+	}
+
 	/* TO BE COMPLETED */
 
 	/* MAIN */
