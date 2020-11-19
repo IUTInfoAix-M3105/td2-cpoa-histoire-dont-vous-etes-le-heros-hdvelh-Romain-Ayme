@@ -6,6 +6,7 @@
 package pracHDVELH;
 
 import myUtils.ErrorNaiveHandler;
+import org.w3c.dom.Node;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -25,7 +26,6 @@ public class NodeMultiple {
 	/* Overridden methods */
 	@Override
 	public String toString() {
-		/* TO BE COMPLETED */
 		//return data.toString();
 		StringBuilder sb = new StringBuilder();
 		sb.append(data.toString());
@@ -70,21 +70,20 @@ public class NodeMultiple {
 			ErrorNaiveHandler.abort(ERROR_STATUS_INDEX_OUT_OF_RANGE,
 					ERROR_MSG_INDEX_OUT_OF_RANGE + '@' + getClass() + ".getDaughter()");
 		}
-		this.daughters[i] = daughter;
+		daughters[i] = daughter;
 	}
 
 	/**
 	 * @return all the daughters
 	 */
 	public NodeMultiple[] getDaughters() {
-		return this.daughters;
+		return daughters;
 	}
 
 	/**
 	 * @param daughters the daughters to set
 	 */
 	public void setDaughters(NodeMultiple[] daughters) {
-		/* TO BE COMPLETED */
 		this.daughters = daughters;
 	}
 
@@ -111,7 +110,7 @@ public class NodeMultiple {
 	 * @return the content data
 	 */
 	public Object getData() {
-		return this.data;
+		return data;
 	}
 
 	/**
@@ -126,9 +125,13 @@ public class NodeMultiple {
 	 *         daughter node.
 	 */
 	public boolean hasDaughters() {
-		/* TO BE COMPLETED */
-		if (daughters[0] != null)
-			return true;
+		int i = 0;
+		while (i < daughters.length) {
+			if (daughters[i] != null)
+				return true;
+			++i;
+		}
+
 		return false;
 	}
 
@@ -137,7 +140,7 @@ public class NodeMultiple {
 	 * Default constructor.
 	 */
 	public NodeMultiple() {
-		/* TO BE COMPLETED */
+		this(null);
 	}
 
 	/**
@@ -147,7 +150,8 @@ public class NodeMultiple {
 	 * @param data
 	 */
 	public NodeMultiple(Object data) {
-		/* TO BE COMPLETED */
+		this.data = data;
+		this.daughters = new NodeMultiple[0];
 	}
 }
 
