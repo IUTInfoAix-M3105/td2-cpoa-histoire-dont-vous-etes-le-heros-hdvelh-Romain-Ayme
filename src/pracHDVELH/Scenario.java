@@ -20,6 +20,22 @@ public class Scenario {
 		this.head = head;
 	}
 
+	public Event getHead() {
+		return head;
+	}
+
+	public void setHead(Event head) {
+		this.head = head;
+	}
+
+	public GUIManager getGui() {
+		return gui;
+	}
+
+	public void setGui(GUIManager gui) {
+		this.gui = gui;
+	}
+
 	/* TO BE COMPLETED */
 
 	/* MAIN */
